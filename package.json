@@ -1,0 +1,30 @@
+{
+  "name": "devopsportfolio",
+  "version": "1.0.0",
+  "description": "My Personal Portfolio Website using node js, express and ejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhexa/devopsportfolio.git"
+  },
+  "keywords": [
+    "Website",
+    "NodeJS",
+    "EJS",
+    "ExpressJS",
+    "Portfolio"
+  ],
+  "author": "Rhexa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhexa/devopsportfolio/issues"
+  },
+  "homepage": "https://github.com/rhexa/devopsportfolio#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  }
+}
