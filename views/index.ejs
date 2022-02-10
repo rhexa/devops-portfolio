@@ -22,6 +22,9 @@
     <div class="container-fluid">
         <%- include('navbar') %>
         <header id="home" class="scroll-offset">
+            <% if (formSubmitted) { %>
+                <%- include('formSubmitted') %> 
+            <% } %>
             <img class="img-fluid" src="./src/img/showcase2.jpg" alt="technology-image">
         </header>
         <%- include('about') %> 
