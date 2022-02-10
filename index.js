@@ -8,7 +8,8 @@ app.set('view engine', 'ejs');
 app.use('/src', express.static('src'))
 
 app.get('/', (req,res)=>{
-    res.render('index');
+    const skillList = require('./src/json/skills.json')
+    res.render('index', {skillList});
 })
 
 app.listen(port, ()=>console.log(`listening on port ${port}`));
