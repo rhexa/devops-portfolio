@@ -1,13 +1,25 @@
-<section id="projects" class="scroll-offset bg-light">
-    <div class="container" style="height: 500px;">
+<section id="projects" class="scroll-offset bg-light pb-1">
+    <div class="container">
         <div class="title">
             <h2>Projects</h2>
-        </div>
-        <div class="project">
-            <div class="title">
-                <h3>Project 1</h2>
+        </div> <% for(let project of projects) { %> 
+        <div class="project row bg-body rounded-3 shadow my-3">
+            <div class="col-12 col-md-4 p-0">
+                <img src="<%= project.image %>" class="rounded-3" alt="<%= project.name %>">
             </div>
-        </div>
-
+            <div class="col p-4">
+                <h3><%= project.name %></h3>
+                <p><%= project.description %> </p> 
+                <div class="d-flex flex-column-reverse flex-sm-row justify-content-between">
+                    <div>
+                        <a href="<%= project.url %>" class="btn btn-outline-dark" target="_blank">Preview <i class="fas fa-external-link-alt"></i></a>
+                        <a href="<%= project.github %>" class="btn btn-dark" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="mb-5"><% for(let tag of project.tags) { %>
+                        <span class="badge rounded-pill bg-light text-dark"><%= tag %></span> <% } %>
+                    </div>
+                </div>
+            </div>
+        </div> <% } %> 
     </div>
 </section>

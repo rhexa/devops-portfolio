@@ -24,6 +24,11 @@
     width: 100%;
     height: max-content;
 }
+.project img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .scroll-offset {
     padding-top: 56px;
 }
