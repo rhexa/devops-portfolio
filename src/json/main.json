@@ -7,5 +7,23 @@
         ["Heroku", "AWS", "GCP"],
         ["My SQL", "PostgreSQL", "MongoDB"],
         ["Robot Framework", "Web Automation", "Web Scraping", "many more"]
+    ],
+    "projects": [
+        {
+            "name": "Project 1",
+            "image": "src/img/showcase1.jpg",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rerum modi iure quo facere? Consequatur officiis eius eos itaque molestiae corrupti illo molestias magnam? Eaque nulla beatae deleniti adipisci placeat?",
+            "tags": ["node JS", "Express JS", "EJS"],
+            "github": "#",
+            "url": "#"
+        },
+        {
+            "name": "Project 2",
+            "image": "src/img/showcase1.jpg",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rerum modi iure quo facere? Consequatur officiis eius eos itaque molestiae corrupti illo molestias magnam? Eaque nulla beatae deleniti adipisci placeat?",
+            "tags": ["node JS", "Express JS", "Rest API"],
+            "github": "#",
+            "url": "#"
+        }
     ]
 }
