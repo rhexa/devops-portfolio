@@ -1,0 +1,11 @@
+{
+    "skillList": [
+        ["JavaScript", "Python", "Bash", "HTML", "CSS"],
+        ["Debian", "Ubuntu", "Arch Linux", "Amazon Linux"],
+        ["SSH", "RDP", "VNC"],
+        ["Git", "Github Action", "Docker", "Vagrant", "Virtual Box"],
+        ["Heroku", "AWS", "GCP"],
+        ["My SQL", "PostgreSQL", "MongoDB"],
+        ["Robot Framework", "Web Automation", "Web Scraping", "many more"]
+    ]
+}

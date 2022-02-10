@@ -32,15 +32,10 @@
             <!-- Right panel/skills -->
             <div class="col">
                 <div class="title"><h3 class="fs-4 fw-normal">Skills</h3></div>
-                <div class="content skills d-flex flex-column">
-                    <% for( let skills of skillList ) { %>
-                    <ul>
-                        <% for( let skill of skills ) { %>
-                        <li><%= skill %></li>
-                        <% } %>
-                    </ul>
-                    <% } %>
-                    
+                <div class="content skills d-flex flex-column"><% for( let skills of skillList ) { %>
+                    <ul> <% for( let skill of skills ) { %>
+                        <li><%= skill %></li><% } %>
+                    </ul><% } %>
                 </div>
             </div>
 
