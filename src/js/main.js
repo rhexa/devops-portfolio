@@ -9,4 +9,8 @@ const paintSkill = () => {
     })
 }
 
+const hideSelf = (el) => {
+    el.style.display='none'
+}
+
 paintSkill()
