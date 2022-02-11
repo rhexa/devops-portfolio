@@ -18,6 +18,8 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # expect to get output from the step and store it under "deployUrl" variable
+    environment:
+      name: Staging
     outputs:
       deployUrl: ${{ steps.set-url.outputs.deployUrl }}
     # Steps represent a sequence of tasks that will be executed as part of the job
