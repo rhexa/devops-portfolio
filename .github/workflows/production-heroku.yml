@@ -1,14 +1,14 @@
-name: Stage Deploy Heroku
+name: Production Deploy Heroku
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on pull request events for the main and development branch
-  pull_request:
+  push:
     branches: 
       - main
-      - development
 env: 
-  APP_NAME: rhexa-stage-${{ github.head_ref }}
+  # Define heroku application name here
+  APP_NAME: ramafauzan
   HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     # expect to get output from the step and store it under "deployUrl" variable
     environment:
-      name: Staging
+      name: Production
     outputs:
       deployUrl: ${{ steps.set-url.outputs.deployUrl }}
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -46,7 +46,7 @@ jobs:
     name: Deploy Staging
     runs-on: ubuntu-latest
     environment:
-      name: Staging
+      name: Production
       url: ${{ needs.Build.outputs.deployUrl }}
     steps:
       - name: Checkout code
