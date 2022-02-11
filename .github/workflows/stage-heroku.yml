@@ -1,0 +1,65 @@
+name: Stage Deploy Heroku
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  pull_request:
+    branches: 
+      - main
+      - development
+env: 
+  APP_NAME: rhexa-stage-${{ github.head_ref }}
+  HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  Build:
+    # build heroku environment and return the server address
+    name: Build Heroku
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # expect to get output from the step and store it under "deployUrl" variable
+    environment:
+      name: Staging
+    outputs:
+      deployUrl: ${{ steps.set-url.outputs.deployUrl }}
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Build heroku environment, deleting previous stage and recreating it
+      - name: Build heroku
+        run: make build-heroku
+
+      # Store the stage url in to "deployURL" output
+      - name: return stage url
+        id: set-url
+        run: |
+          URL=$(cat url.txt)  
+          echo "::set-output name=deployUrl::$URL"
+
+  DeployStage:
+    needs: [Build]
+    name: Deploy Staging
+    runs-on: ubuntu-latest
+    environment:
+      name: Staging
+      url: ${{ needs.Build.outputs.deployUrl }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      # Deploying to heroku
+      - name: Deploying to heroku
+        run: make deploy-heroku
+
+      # Cleaning up the environment
+      - name: Cleaning up the environtment
+        if: ${{ always() }}
+        run: make cleanup
