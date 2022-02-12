@@ -10,19 +10,11 @@
     ],
     "projects": [
         {
-            "name": "Project 1",
-            "image": "src/img/showcase1.jpg",
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rerum modi iure quo facere? Consequatur officiis eius eos itaque molestiae corrupti illo molestias magnam? Eaque nulla beatae deleniti adipisci placeat?",
-            "tags": ["node JS", "Express JS", "EJS"],
-            "github": "#",
-            "url": "#"
-        },
-        {
-            "name": "Project 2",
-            "image": "src/img/showcase1.jpg",
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rerum modi iure quo facere? Consequatur officiis eius eos itaque molestiae corrupti illo molestias magnam? Eaque nulla beatae deleniti adipisci placeat?",
-            "tags": ["node JS", "Express JS", "Rest API"],
-            "github": "#",
+            "name": "Devops Portfolio",
+            "image": "src/img/project1.jpg",
+            "description": "This project is about the portfolio website you are currently visiting. It is a Node JS based website with help of express, EJS and Bootstrap. It is also implementing a pipeline using Github Action to shorten the development cycle.",
+            "tags": ["Node JS", "Express JS", "EJS", "HTML", "CSS", "Bootstrap", "GitHub Action", "Heroku"],
+            "github": "https://github.com/rhexa/devops-portfolio",
             "url": "#"
         }
     ]
