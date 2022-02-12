@@ -1,25 +1,41 @@
-<section id="contacts" class="scroll-offset bg-light">
-    <div class="container bg-body p-5 rounded-3 shadow">
-        <div class="row">
-            <div class="col">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae alias illum odio ipsam natus veritatis iste voluptas! Tempore reprehenderit nobis illo, omnis eos, maxime nemo temporibus nam veritatis, molestiae aliquid!
+<section id="contacts" class="bg-turqoise-3">
+    <div class="container flex justify-between pt-36">
+        <div class="flex flex-col justify-between">
+            <div class="relative">
+                <h2 class="relative z-10">Let's Get in Touch</h2>
+                <!-- matrix -->
+                <div class="absolute -top-10 w-36 h-36">
+                    <!-- rows -->
+                    <div class="flex justify-start h-1/3">
+                        <div class="w-1/3 h-full bg-turqoise-1"></div>
+                    </div>
+                    <div class="flex justify-center h-1/3">
+                        <div class="w-1/3 h-full bg-turqoise-1"></div>
+                    </div>
+                    <div class="flex justify-end h-1/3">
+                        <div class="w-1/3 h-full bg-turqoise-1"></div>
+                    </div>
+                </div>
             </div>
-            <form class="col-6" action="send" method="post">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name">
+            <div class="flex flex-col h-3/5">
+                <div class="flex flex-col h-1/2 justify-evenly">
+                    <h3>You can contact me at</h3>
+                    <a href="mailto:"><%- include("./components/icons/email") %> rama.goabroad@gmail.com</a>
+                    <a href="tel:+"><%- include('./components/icons/phone') %>  +358 41 745 7537</a>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="flex flex-col h-1/2 justify-evenly">
+                    <h3>You can contact me at</h3>
+                    <a href="mailto:"><%- include("./components/icons/linkedin") %> rama.goabroad@gmail.com</a>
+                    <a href="tel:+"><%- include("./components/icons/github") %>  +358 41 745 7537</a>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea id="message" name="message" class="form-control" rows="7"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
+            <div class="flex">
+                <h3 class="my-auto">Or simply use this contact form </h3>
+                <i class="fa-solid fa-arrow-right-long fa-4x ml-7"></i>
+            </div>
         </div>
+        
+        <%- include("./components/form") %> 
+
     </div>
 </section>
