@@ -31,5 +31,10 @@
             "tags": ["Docker"],
             "github": "https://github.com/rhexa/start-docker/tree/main#publishing-the-image-to-the-docker-hub"
         }
-    ]
+    ],
+    "contacts": {
+        "email": "rachmad.fauzan@student.hamk.fi",
+        "linkedin": "https://www.linkedin.com/in/rachmad-fauzan/",
+        "github": "https://github.com/rhexa"
+    }
 }
