@@ -24,17 +24,38 @@
         },
         {
             "name": "Movie App REST API",
-            "image": "src/img/project-devops-portfolio.jpg",
-            "description": "Simple Rest API server implementing CRUD functionalities with Node JS and Express JS. Github Action is also used to create a pipeline to deploy the application to heroku",
+            "image": "src/img/project-movie-app.jpg",
+            "description": "Simple Rest API server implementing CRUD functionalities with Node JS and Express JS. Github Action is also used to create a pipeline to deploy the application to heroku.",
             "tags": ["Node JS", "Express JS", "EJS", "HTML", "GitHub Action", "Heroku"],
             "github": "https://github.com/rhexa/nodeJS-express-rest-practice-crud"
         },
         {
             "name": "Start Docker",
             "image": "src/img/project-start-docker.jpg",
-            "description": "This is a Quick Start project which helps us to quickly start working with Docker. This quick start contains guidelines from setting up docker engine, working with Dockerfile, creating image and publishing image to the Docker HUB",
+            "description": "This is a Quick Start guideline which helps us to quickly start working with Docker. This quick start contains guidelines from setting up docker engine, working with Dockerfile, creating image and publishing image to the Docker HUB.",
             "tags": ["Docker"],
-            "github": "https://github.com/rhexa/start-docker/tree/main#publishing-the-image-to-the-docker-hub"
+            "github": "https://github.com/rhexa/start-docker"
+        },
+        {
+            "name": "Start Vagrant",
+            "image": "src/img/project-start-vagrant.jpg",
+            "description": "This is a Quick Start guideline which helps us to quickly start working with Vagrant. This quick start contains guidelines from setting up Vagrant, working with Vagrantfile, creating image and running it",
+            "tags": ["Vagrant"],
+            "github": "https://github.com/rhexa/start-vagrant"
+        },
+        {
+            "name": "Apt Apps",
+            "image": "src/img/project-apt-apps.jpg",
+            "description": "This project contains collection of scripts for installing packages on apt based operating system. This can be used at provision step when using Vagrant, Terraform or any other cases.",
+            "tags": ["Bash", "apt", "Debian", "Ubuntu", "Linux Mint"],
+            "github": "https://github.com/rhexa/start-vagrant"
+        },
+        {
+            "name": "AWS Academy Cloud Foundations (Certificate)",
+            "image": "src/img/project-aws-certificate.jpg",
+            "description": "This certificate is a proof of my completion of the AWS Academy Cloud Foundation Course.",
+            "tags": ["AWS", "Cloud Computing", "Certificate"],
+            "url": "https://www.credly.com/go/6SqtH3Ki"
         }
     ],
     "contacts": {
