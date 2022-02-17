@@ -16,16 +16,16 @@
                         <div>
                             <p class="fs-4 text-primary">Welcome to my page</p>
                             <p class="fs-1 fw-bold mb-0">Rama Fauzan</p>
-                            <p class="fs-5 mt-0">Junior DevOps Engineer</p>
+                            <p class="fs-5 mt-0"><%= profile.role %> </p>
                         </div>
                     </div>
 
                     <!-- Profile Picture -->
-                    <div class="col-12 col-xl-4 d-flex justify-content-center"><img class="profile-picture rounded-circle mx-auto" src="./src/img/profile.jpg" alt="profile-picture"></div>
+                    <div class="col-12 col-xl-4 d-flex justify-content-center"><img class="profile-picture rounded-circle mx-auto" src="<%= profile.picture %> " alt="profile-picture"></div>
                 </div>
 
                 <!-- Profile body -->
-                <p>I am a junior DevOps engineer finishing my bachelor in ICT field at HAMK. I am passionate about devops and server technologies. And, I have about 8 years experience being an entrepreneur in tourism/hospitality industry. So, solving problem and finding out solution has always been my nature.</p>
+                <p><%= profile.description %> </p>
 
             </div>
 
