@@ -17,7 +17,7 @@
         {
             "name": "Devops Portfolio",
             "image": "src/img/project-devops-portfolio.jpg",
-            "description": "This project is about the portfolio website you are currently visiting. It is a Node JS based website with help of express, EJS and Bootstrap. It is also implementing a pipeline using Github Action to shorten the development cycle.",
+            "description": "This project is about the portfolio website you are currently visiting. It is a Node JS based website with help of Express JS, EJS and Bootstrap. It is also implementing a pipeline using Github Action to deploy the app automatically to Heroku.",
             "tags": ["Node JS", "Express JS", "EJS", "HTML", "CSS", "Bootstrap", "GitHub Action", "Heroku"],
             "github": "https://github.com/rhexa/devops-portfolio",
             "url": "#"
@@ -25,9 +25,25 @@
         {
             "name": "Movie App REST API",
             "image": "src/img/project-movie-app.jpg",
-            "description": "Simple Rest API server implementing CRUD functionalities with Node JS and Express JS. Github Action is also used to create a pipeline to deploy the application to heroku.",
+            "description": "Simple Rest API server implementing CRUD functionalities with Node JS and Express JS. Github Action is also used to create a pipeline to test(lint) and deploy the app automatically to Heroku.",
             "tags": ["Node JS", "Express JS", "EJS", "HTML", "GitHub Action", "Heroku"],
+            "url": "https://rhexa-movieapp-api.herokuapp.com/api/movies",
             "github": "https://github.com/rhexa/nodeJS-express-rest-practice-crud"
+        },
+        {
+            "name": "Robotframework Selenium Flight Testing",
+            "image": "src/img/project-robotframework-selenium-flight.jpg",
+            "description": "Simple project to practice testing automation with Robotframework. This project is implementing Robotframework, Docker and Github Action to build and run the docker test image.",
+            "tags": ["Robotframework", "Selenium", "Python", "Docker", "GitHub Action", "Test Automation"],
+            "url": "https://www.youtube.com/watch?v=12ywzF3SAeA",
+            "github": "https://github.com/rhexa/robotframework-selenium-flighttest"
+        },
+        {
+            "name": "AWS Academy Cloud Foundations (Certificate)",
+            "image": "src/img/project-aws-certificate.jpg",
+            "description": "This certificate is a proof of my completion of the AWS Academy Cloud Foundation Course.",
+            "tags": ["AWS", "Cloud Computing", "Certificate"],
+            "url": "https://www.credly.com/go/6SqtH3Ki"
         },
         {
             "name": "Start Docker",
@@ -39,23 +55,16 @@
         {
             "name": "Start Vagrant",
             "image": "src/img/project-start-vagrant.jpg",
-            "description": "This is a Quick Start guideline which helps us to quickly start working with Vagrant. This quick start contains guidelines from setting up Vagrant, working with Vagrantfile, creating image and running it",
+            "description": "This is a Quick Start guideline which helps us to quickly start working with Vagrant. This quick start contains guidelines from setting up Vagrant, working with Vagrantfile, creating image and running it.",
             "tags": ["Vagrant"],
             "github": "https://github.com/rhexa/start-vagrant"
         },
         {
             "name": "Apt Apps",
             "image": "src/img/project-apt-apps.jpg",
-            "description": "This project contains collection of scripts for installing packages on apt based operating system. This can be used at provision step when using Vagrant, Terraform or any other cases.",
+            "description": "This project contains collection of scripts for installing packages on apt based operating system. This can be used at provision step when using Vagrant, Terraform or any other possible use cases.",
             "tags": ["Bash", "apt", "Debian", "Ubuntu", "Linux Mint"],
             "github": "https://github.com/rhexa/start-vagrant"
-        },
-        {
-            "name": "AWS Academy Cloud Foundations (Certificate)",
-            "image": "src/img/project-aws-certificate.jpg",
-            "description": "This certificate is a proof of my completion of the AWS Academy Cloud Foundation Course.",
-            "tags": ["AWS", "Cloud Computing", "Certificate"],
-            "url": "https://www.credly.com/go/6SqtH3Ki"
         }
     ],
     "contacts": {
