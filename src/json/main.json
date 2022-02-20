@@ -17,7 +17,7 @@
         {
             "name": "Devops Portfolio",
             "image": "src/img/project-devops-portfolio.jpg",
-            "description": "This project is about the portfolio website you are currently visiting. It is a Node JS based website with help of Express JS, EJS and Bootstrap. It is also implementing a pipeline using Github Action to deploy the app automatically to Heroku.",
+            "description": "This project is about the portfolio website you are currently visiting. It is a Node JS based website with help of Express JS, EJS and Bootstrap. It is also implementing a pipeline using Github Action. Upon \"pull request event\" into main or development branch will automatically deploy the app to the staging environment on Heroku. And triggering the \"push event\" on the main branch will deploy the app automatically to the production environment on Heroku.",
             "tags": ["Node JS", "Express JS", "EJS", "HTML", "CSS", "Bootstrap", "GitHub Action", "Heroku"],
             "github": "https://github.com/rhexa/devops-portfolio",
             "url": "#"
