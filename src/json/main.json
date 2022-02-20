@@ -1,4 +1,9 @@
 {
+    "profile": {
+        "picture": "/src/img/profile.jpg",
+        "role": "Junior DevOps Engineer",
+        "description": "Hi, there! I am a junior DevOps engineer and am currently in the second year of my Computer Applications (BBA) degree at HAMK. I am passionate about DevOps and server technologies and am always striving to learn about new DevOps technologies and processes. I have around 8 years worth of work experience being an entrepreneur within the tourism industry in Bali. Being a self-taught entrepreneur forced me to be innovative, think on my feet, and adapt to unexpected situations. I had to learn fast and solve many different problems at the same time. In my previous field of work, I enjoyed working with multi-national clients, face to face on a daily basis, and I am experienced with working well either on my own, or as a member of a team. I am now looking for new ICT challenges, and a career path where I hope to grow, develop, provide value, and actualise my full potential. I hope to hear from you soon!"
+    },
     "skillList": [
         ["JavaScript", "Python", "Bash", "HTML", "CSS"],
         ["Debian", "Ubuntu", "Arch Linux", "Amazon Linux"],
@@ -11,11 +16,60 @@
     "projects": [
         {
             "name": "Devops Portfolio",
-            "image": "src/img/project1.jpg",
-            "description": "This project is about the portfolio website you are currently visiting. It is a Node JS based website with help of express, EJS and Bootstrap. It is also implementing a pipeline using Github Action to shorten the development cycle.",
+            "image": "src/img/project-devops-portfolio.jpg",
+            "description": "This project is about the portfolio website you are currently visiting. It is a Node JS based website with help of Express JS, EJS and Bootstrap. It is also implementing a pipeline using Github Action. Upon \"pull request event\" into main or development branch will automatically deploy the app to the staging environment on Heroku. And triggering the \"push event\" on the main branch will deploy the app automatically to the production environment on Heroku.",
             "tags": ["Node JS", "Express JS", "EJS", "HTML", "CSS", "Bootstrap", "GitHub Action", "Heroku"],
             "github": "https://github.com/rhexa/devops-portfolio",
             "url": "#"
+        },
+        {
+            "name": "Movie App REST API",
+            "image": "src/img/project-movie-app.jpg",
+            "description": "Simple Rest API server implementing CRUD functionalities with Node JS and Express JS. Github Action is also used to create a pipeline to test(lint) and deploy the app automatically to Heroku.",
+            "tags": ["Node JS", "Express JS", "EJS", "HTML", "GitHub Action", "Heroku"],
+            "url": "https://rhexa-movieapp-api.herokuapp.com/api/movies",
+            "github": "https://github.com/rhexa/nodeJS-express-rest-practice-crud"
+        },
+        {
+            "name": "Robotframework Selenium Flight Testing",
+            "image": "src/img/project-robotframework-selenium-flight.jpg",
+            "description": "Simple project to practice testing automation with Robotframework. This project is implementing Robotframework, Docker and Github Action to build and run the docker test image.",
+            "tags": ["Robotframework", "Selenium", "Python", "Docker", "GitHub Action", "Test Automation"],
+            "url": "https://www.youtube.com/watch?v=12ywzF3SAeA",
+            "github": "https://github.com/rhexa/robotframework-selenium-flighttest"
+        },
+        {
+            "name": "AWS Academy Cloud Foundations (Certificate)",
+            "image": "src/img/project-aws-certificate.jpg",
+            "description": "This certificate is a proof of my completion of the AWS Academy Cloud Foundation Course.",
+            "tags": ["AWS", "Cloud Computing", "Certificate"],
+            "url": "https://www.credly.com/go/6SqtH3Ki"
+        },
+        {
+            "name": "Start Docker",
+            "image": "src/img/project-start-docker.jpg",
+            "description": "This is a Quick Start guideline which helps us to quickly start working with Docker. This quick start contains guidelines from setting up docker engine, working with Dockerfile, creating image and publishing image to the Docker HUB.",
+            "tags": ["Docker"],
+            "github": "https://github.com/rhexa/start-docker"
+        },
+        {
+            "name": "Start Vagrant",
+            "image": "src/img/project-start-vagrant.jpg",
+            "description": "This is a Quick Start guideline which helps us to quickly start working with Vagrant. This quick start contains guidelines from setting up Vagrant, working with Vagrantfile, creating image and running it.",
+            "tags": ["Vagrant"],
+            "github": "https://github.com/rhexa/start-vagrant"
+        },
+        {
+            "name": "Apt Apps",
+            "image": "src/img/project-apt-apps.jpg",
+            "description": "This project contains collection of scripts for installing packages on apt based operating system. This can be used at provision step when using Vagrant, Terraform or any other possible use cases.",
+            "tags": ["Bash", "apt", "Debian", "Ubuntu", "Linux Mint"],
+            "github": "https://github.com/rhexa/apt-apps"
         }
-    ]
+    ],
+    "contacts": {
+        "email": "rachmad.fauzan@student.hamk.fi",
+        "linkedin": "https://www.linkedin.com/in/rachmad-fauzan/",
+        "github": "https://github.com/rhexa"
+    }
 }
