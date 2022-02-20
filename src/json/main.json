@@ -64,7 +64,7 @@
             "image": "src/img/project-apt-apps.jpg",
             "description": "This project contains collection of scripts for installing packages on apt based operating system. This can be used at provision step when using Vagrant, Terraform or any other possible use cases.",
             "tags": ["Bash", "apt", "Debian", "Ubuntu", "Linux Mint"],
-            "github": "https://github.com/rhexa/start-vagrant"
+            "github": "https://github.com/rhexa/apt-apps"
         }
     ],
     "contacts": {
