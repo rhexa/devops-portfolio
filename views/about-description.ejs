@@ -1,0 +1,44 @@
+<section id="about" class="scroll-offset">
+    <div class="container">
+        <!-- Section head -->
+        <div class="title">
+            <h2>About</h2>
+        </div>
+
+        <!-- Section body -->
+        <div class="content row">
+            <!-- Left panel/profile-->
+            <div class="col-12 col-lg">
+                <!-- Profile header -->
+                <div class="row py-3">
+                    <!-- Intro -->
+                    <div class="col d-flex align-items-center">
+                        <div>
+                            <p class="fs-4 text-primary">Welcome to my page</p>
+                            <p class="fs-1 fw-bold mb-0">Rama Fauzan</p>
+                            <p class="fs-5 mt-0"><%= profile.role %> </p>
+                        </div>
+                    </div>
+
+                    <!-- Profile Picture -->
+                    <div class="col-12 col-xl-4 d-flex justify-content-center"><img class="profile-picture rounded-circle mx-auto" src="<%= profile.picture %> " alt="profile-picture"></div>
+                </div>
+
+                <!-- Profile body -->
+                <p><%= profile.description %> </p>
+
+            </div>
+
+            <!-- Right panel/skills -->
+            <div class="col">
+                <div class="title"><h3 class="fs-4 fw-normal">Skills</h3></div>
+                <div class="content skills d-flex flex-column"><% for( let skills of skillList ) { %>
+                    <ul> <% for( let skill of skills ) { %>
+                        <li><%= skill %></li><% } %>
+                    </ul><% } %>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
