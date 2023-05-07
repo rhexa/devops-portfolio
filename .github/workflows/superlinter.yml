@@ -11,7 +11,7 @@ name: Lint Code Base
 #############################
 on:
   pull_request:
-    branches: [main, development, v.0.2**]
+    branches: [main, development, v0.2**]
    
 ###############
 # Set the Job #
