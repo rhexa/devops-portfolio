@@ -52,9 +52,11 @@ jobs:
           CREATE_LOG_FILE: true
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Upload super-linter log file
-        uses: actions/upload-artifact@v3
+      
+      - name: find artifact file
+        run: find . -iname super-linter.log
+        
+      - uses: actions/upload-artifact@v3
         with:
           name: super-linter.log
           path: super-linter.log
