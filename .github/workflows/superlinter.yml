@@ -45,9 +45,16 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_CSS: true
-#           VALIDATE_JAVASCRIPT_STANDARD: true
-#           VALIDATE_GITHUB_ACTIONS: true
-#           VALIDATE_HTML: true
-#           VALIDATE_MARKDOWN: true
+          VALIDATE_JAVASCRIPT_STANDARD: true
+          VALIDATE_GITHUB_ACTIONS: true
+          VALIDATE_HTML: true
+          VALIDATE_MARKDOWN: true
+          CREATE_LOG_FILE: true
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Upload super-linter log file
+        uses: actions/upload-artifact@v3
+        with:
+          name: super-linter.log
+          path: super-linter.log
