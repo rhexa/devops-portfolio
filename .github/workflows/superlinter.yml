@@ -49,14 +49,6 @@ jobs:
           VALIDATE_GITHUB_ACTIONS: true
           VALIDATE_HTML: true
           VALIDATE_MARKDOWN: true
-          CREATE_LOG_FILE: true
           LOG_LEVEL: WARN
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-      - name: Upload super-linter log file
-        if: ${{ always() }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: super-linter-log
-          path: super-linter.log
