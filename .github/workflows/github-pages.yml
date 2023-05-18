@@ -33,7 +33,7 @@ jobs:
       - name: Create build directory
         run: mkdir build
       - name: Build HTML
-        run: npm i && npm build
+        run: npm i && npm run build
       - name: Copy src files to build folder
         run: cp -r src/ build/
       - name: Upload build artifacts
