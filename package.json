@@ -4,7 +4,8 @@
   "description": "My Personal Portfolio Website using node js, express and ejs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "cd views/ && ejs index.ejs -f ../src/json/main.json -o ../build/index.html"
   },
   "repository": {
     "type": "git",
