@@ -1,6 +1,6 @@
 {
     "profile": {
-        "picture": "/src/img/profile.jpg",
+        "picture": "src/img/profile.jpg",
         "role": "Junior DevOps Engineer",
         "description": "Hi, there! I am a junior DevOps engineer and am currently in the second year of my Computer Applications (BBA) degree at HAMK. I am passionate about DevOps and server technologies and am always striving to learn about new DevOps technologies and processes. I have around 8 years worth of work experience being an entrepreneur within the tourism industry in Bali. Being a self-taught entrepreneur forced me to be innovative, think on my feet, and adapt to unexpected situations. I had to learn fast and solve many different problems at the same time. In my previous field of work, I enjoyed working with multi-national clients, face to face on a daily basis, and I am experienced with working well either on my own, or as a member of a team. I am now looking for new ICT challenges, and a career path where I hope to grow, develop, provide value, and actualise my full potential. I hope to hear from you soon!"
     },
@@ -71,5 +71,6 @@
         "email": "rachmad.fauzan@student.hamk.fi",
         "linkedin": "https://www.linkedin.com/in/rachmad-fauzan/",
         "github": "https://github.com/rhexa"
-    }
+    },
+    "formSubmitted": false
 }
